@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -20,5 +20,101 @@
 
     <script src="eventos.js"></script>
     
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript - Eventos</title>
+<style>
+img { max-width: 100%; }
+.destaque { 
+    background-color: yellow;
+    color: red; font-weight: bold;
+    border: solid 1px;
+    padding: 2px;
+}
+
+.modo-noturno {
+    background-color: black;
+    color: white;
+}
+</style>
+</head>
+<body>
+    <h1>Eventos</h1>
+    <p>Eventos são interações/fenômenos que ocorrem na página. Ao monitorar e manipular eventos, o JS pode reagir ao que acontece.</p>
+    <hr>
+
+    <h2 id="subtitulo-exemplo01">Exemplo 01: detectando eventos</h2>
+    <p id="mensagem"></p>
+
+    <hr>
+
+    <h2>Exemplo 02: Modo Noturno</h2>
+    <button id="noturno">Ativar</button>  
+
+    <hr>
+
+
+    <h2>Exemplo 03: Formulário (simulação de cadastro)</h2>
+    <form action="" method="post" id="cadastro">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+        </p>
+        <p>
+            <label for="nota1">Nota 1:</label>
+            <input type="number" id="nota1" min="0" max="10" step="0.1" required>
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" min="0" max="10" step="0.1" required>
+        </p>
+        <button id="avaliar">Avaliar</button>
+    </form>
+	
+    <section>
+        <h2>Alunos:</h2>
+        
+        <table>
+            <caption>Resumo</caption>
+
+            <thead> <!-- table head -->
+                <tr> <!-- table row -->
+                    <th>Nome</th> <!-- table heading -->
+                    <th>Média</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+
+            <tbody> <!-- table body -->
+                <!-- As linhas/células de conteúdo
+                serão geradas dinamicamente, via JS -->
+            </tbody>
+        </table>        
+
+    </section>
+
+    <hr>
+
+    <h2>Referências</h2>
+    <ul>
+        <li><b>Eloquent JavaScript:</b> 
+			<a href="https://github.com/braziljs/eloquente-javascript/blob/master/chapters/14-manipulando-eventos.md" target="_blank">
+			Manipulando Eventos</a>
+		</li>
+        <li><b>MDN:</b> 
+			<a href="https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Elementos_construtivos/Events" target="_blank">
+			Introdução a eventos
+			</a>
+		</li>
+    </ul>
+
+    <script src="eventos.js"></script>
+
 </body>
 </html>
